@@ -1,7 +1,7 @@
 # MetaCRAM
 Lossless compression tool for metagenomic reads
 
-Requirements and Dependencies
+##Requirements and Dependencies
 ===================================================================
 MetaCram is suitable for all unix-like operating systems with perl installation.
 
@@ -25,15 +25,18 @@ ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/all.fna.tar.gz.
 After decompressing the file, run genomeOrganizer.pl. 
 
 
-Commands to run MetaCRAM
+##Commands to run MetaCRAM
 
-Compression
+*Compression*
+
 `perl MetaCram.pl --compress --output <output directory> --paired <path to reads> --<exGolomb, huffman, golomb>`
 
 Example:
+
 `[shared3]$ perl MetaCram.pl --compress --output /shared3/MetaCRAM_SRR359032_Huffman --paired /shared3/SRR359032_1.fasta /shared3/ SRR359032_2.fasta --huffman &>MetaCramLOG_SRR359032_Huffman.txt`
 
-Decompression:
+*Decompression*
+
 `perl decompressor.pl --input <path to folder containing the Round1 and Round2 folders>`
 
 Example:
