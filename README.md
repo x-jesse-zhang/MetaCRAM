@@ -6,35 +6,42 @@ Requirements and Dependencies
 MetaCram is suitable for all unix-like operating systems with perl installation.
 
 MetaCram uses the following software packages:
-	Kraken - available from https://ccb.jhu.edu/software/kraken/
-	Bowtie2 - available from http://bowtie-bio.sourceforge.net/bowtie2/index.shtml
-	BLAST - available from http://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download
-	IDBA - available from http://i.cs.hku.hk/~alse/hkubrg/projects/idba/
-	CRAM - 3 jar files packaged together with the script
-	MFCompress - available from http://bioinformatics.ua.pt/software/mfcompress/
+* Kraken - available from https://ccb.jhu.edu/software/kraken/
+  - download minikraken database
+* Bowtie2 - available from http://bowtie-bio.sourceforge.net/bowtie2/index.shtml
+* BLAST - available from http://blast.ncbi.nlm.nih.gov/Blast.cgi?PAGE_TYPE=BlastDocs&DOC_TYPE=Download 
+  - download nt database.
+* IDBA - available from http://i.cs.hku.hk/~alse/hkubrg/projects/idba/
+* CRAM - 3 jar files packaged together with the script 
+  - ExtendedGolombCRAM.jar
+  - GolombCRAM.jar 
+  - HuffmanCRAM.jar
+* MFCompress - available from http://bioinformatics.ua.pt/software/mfcompress/
 You will need to download and install these packages before running MetaCRAM.
 
 
 MetaCram also makes use of the bacterial genome library from NCBI, which can be downloaded from 
 ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/all.fna.tar.gz. 
-
 After decompressing the file, run genomeOrganizer.pl. 
-BLAST database can be downloaded from 
+
 
 Commands to run MetaCRAM
+
 Compression
-time perl MetaCram.pl --<compress, decompress> --output <output directory> --paired <path to reads> --<exGolomb, huffman, golomb>
+`perl MetaCram.pl --compress --output <output directory> --paired <path to reads> --<exGolomb, huffman, golomb>`
 
 Example:
-[shared3]$ time perl MetaCram.pl --compress --output /shared3/MetaCRAM_SRR359032_Huffman --paired /shared3/SRR359032_1.fasta /shared3/ SRR359032_2.fasta --huffman &>MetaCramLOG_SRR359032_Huffman.txt
+`[shared3]$ perl MetaCram.pl --compress --output /shared3/MetaCRAM_SRR359032_Huffman --paired /shared3/SRR359032_1.fasta /shared3/ SRR359032_2.fasta --huffman &>MetaCramLOG_SRR359032_Huffman.txt`
 
 Decompression:
-time perl decompressor.pl --input <path to folder containing the Round1 and Round2 folders>
+`perl decompressor.pl --input <path to folder containing the Round1 and Round2 folders>`
 
 Example:
-[shared3]$ time perl decompressor.pl --input /shared3/MetaCRAM_processedSRR359032_Huffman/MetaCRAM &>decompressorLogSRR359032_Huffman.txt
+`[shared3]$ perl decompressor.pl --input /shared3/MetaCRAM_processedSRR359032_Huffman/MetaCRAM &>decompressorLogSRR359032_Huffman.txt`
 
 (*--paired is optional)
+
 (*<> indicates a choice)
+
 (* to log, append “&> <log file>”)
-(* “time” command to get real, user, system run time) 
+
