@@ -40,6 +40,7 @@ Example:
 `perl decompressor.pl --input <path to folder containing the Round1 and Round2 folders>`
 
 Example:
+
 `[shared3]$ perl decompressor.pl --input /shared3/MetaCRAM_processedSRR359032_Huffman/MetaCRAM &>decompressorLogSRR359032_Huffman.txt`
 
 (*--paired is optional)
