@@ -18,6 +18,7 @@ MetaCram uses the following software packages:
   - HuffmanCRAM.jar
 * SAMtools - available from samtools.sourceforge.net
 * MFCompress - available from http://bioinformatics.ua.pt/software/mfcompress/
+
 You will need to download and install these packages before running MetaCRAM.
 
 
