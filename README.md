@@ -3,7 +3,7 @@ Lossless compression tool for metagenomic reads
 
 ##Requirements and Dependencies
 
-MetaCram is suitable for all unix-like operating systems with perl installation.
+MetaCram is suitable for all unix-like operating systems with perl installation with perl modules 1) `File::Slurp` 2) `Array::Utils` 3) `Capture::Tiny`.
 
 MetaCram uses the following software packages:
 * Kraken - available from https://ccb.jhu.edu/software/kraken/
@@ -16,6 +16,7 @@ MetaCram uses the following software packages:
   - ExtendedGolombCRAM.jar
   - GolombCRAM.jar 
   - HuffmanCRAM.jar
+* SAMtools - available from samtools.sourceforge.net
 * MFCompress - available from http://bioinformatics.ua.pt/software/mfcompress/
 You will need to download and install these packages before running MetaCRAM.
 
@@ -37,11 +38,11 @@ Example:
 
 **Decompression**
 
-`perl decompressor.pl --input <path to folder containing the Round1 and Round2 folders>`
+`perl MetaDeCram.pl --input <path to folder containing the Round1 and Round2 folders>`
 
 Example:
 
-`[shared3]$ perl decompressor.pl --input /shared3/MetaCRAM_processedSRR359032_Huffman/MetaCRAM &>decompressorLogSRR359032_Huffman.txt`
+`[shared3]$ perl MetaDeCram.pl --input /shared3/MetaCRAM_processedSRR359032_Huffman/MetaCRAM &>decompressorLogSRR359032_Huffman.txt`
 
 (*--paired is optional)
 
