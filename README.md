@@ -26,7 +26,7 @@ MetaCram also makes use of the bacterial genome library from NCBI, which can be 
 ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/all.fna.tar.gz. 
 After decompressing the file, we need to combine multiple strands into one folder. 
 
-Alternatively, we have a genus database in the specific format needed by MetaCRAM, called "genus_db_final.tgz",  which can be downloaded here: https://uofi.box.com/s/sy92jv098eb0e4s277vuiod72m2jjf7c
+Alternatively, we recommend that you download our genus database in the specific format needed by MetaCRAM, called "genus_db_final.tgz",  from https://uofi.box.com/s/sy92jv098eb0e4s277vuiod72m2jjf7c
 
 
 
