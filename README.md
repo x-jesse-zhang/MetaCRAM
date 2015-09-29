@@ -54,6 +54,8 @@ Example:
 
 (* to log, append “&> <log file>”)
 
+(Path to directories which contain various databases need to be pre-specified)
+
 ##Options
 For more options, run `perl MetaCram.pl --help`.
 
