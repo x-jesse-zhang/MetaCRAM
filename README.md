@@ -56,3 +56,6 @@ Example:
 
 ##Options
 For more options, run `perl MetaCram.pl --help`.
+
+##Contact
+Minji Kim (mkim158@illinois.edu) and Xiejia Zhang (xzhan121@illinois.edu)
