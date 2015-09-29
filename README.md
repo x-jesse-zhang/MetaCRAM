@@ -24,7 +24,10 @@ You will need to download and install these packages before running MetaCRAM.
 
 MetaCram also makes use of the bacterial genome library from NCBI, which can be downloaded from 
 ftp://ftp.ncbi.nlm.nih.gov/genomes/Bacteria/all.fna.tar.gz. 
-After decompressing the file, run genomeOrganizer.pl. 
+After decompressing the file, we need to combine multiple strands into one folder. 
+
+Alternatively, we have a genus database in the specific format needed by MetaCRAM, which can be downloaded here: https://uofi.box.com/s/sy92jv098eb0e4s277vuiod72m2jjf7c
+
 
 
 ##Commands to run MetaCRAM
